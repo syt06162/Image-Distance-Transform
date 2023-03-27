@@ -8,10 +8,12 @@ imgsrc :: Sonka, Milan, Vaclav Hlavac, and Roger Boyle. Image processing, analys
    
 binary 이미지에서 각 픽셀들의 object와의 "거리"를 나타낸다.  
 "거리"에 대한 정의는 아래와 같이 크게 3가지가 있다.  
+   
 ![image](https://user-images.githubusercontent.com/92567571/227986088-42d73256-7e63-47f8-bcfd-7b5bf2711912.png)  
 
 ## 기능
 binary 이미지 파일 이름을 input으로 넣으면, src - D4 - D8 - DU 의 결과를 모두 합친 한 개의 이미지를 output으로 저장한다.  
+   
 ![image](https://user-images.githubusercontent.com/92567571/227989783-7b87cb38-95f5-4a0a-b45a-12a68f950fce.png)
 
 
@@ -24,7 +26,8 @@ binary 이미지 파일 이름을 input으로 넣으면, src - D4 - D8 - DU 의 
 distance_transform.py 코드의 2번째줄의 DE_LABEL=1 이면 OpenCV2 라이브러리를 이용, DE_LABEL=2이면 필자의 코드를 이용한다.   
 기본값은 DE_LABEL=1 이다.
 - D4, D8의 구현 방법은 아래 공식을 따른다.  
-![image](https://user-images.githubusercontent.com/92567571/227988417-6035dea9-1969-4d66-b4c5-71d9ff9676bc.png)
+   
+![image](https://user-images.githubusercontent.com/92567571/227988417-6035dea9-1969-4d66-b4c5-71d9ff9676bc.png)   
 - DE의 경우 필자는 BFS 알고리즘을 응용하여 작성하였다. 이는 직접 최단 거리를 찾는 방법으로, 시간 복잡도가 크다.
 
 ## 사용 방법
