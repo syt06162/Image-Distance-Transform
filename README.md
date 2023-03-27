@@ -5,6 +5,7 @@ OpenCV2 함수를 사용하지 않고, distance transform 직접 구현.
 ## 이론
 ![image](https://user-images.githubusercontent.com/92567571/227986435-97d00f63-df03-4f3d-8016-8e83f4a65e0a.png)  
 imgsrc :: Sonka, Milan, Vaclav Hlavac, and Roger Boyle. Image processing, analysis, and machine vision. 4th ed. Cengage Learning, 2014.  
+   
 binary 이미지에서 각 픽셀들의 object와의 "거리"를 나타낸다.  
 "거리"에 대한 정의는 아래와 같이 크게 3가지가 있다.  
 ![image](https://user-images.githubusercontent.com/92567571/227986088-42d73256-7e63-47f8-bcfd-7b5bf2711912.png)  
